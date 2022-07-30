@@ -7,7 +7,7 @@ const Home: NextPage = () => {
         <h1 className="text-6xl uppercase font-bold mb-4">
           Christopher Karger
         </h1>
-        <h2 className="text-4xl">Senior Frontend Developer</h2>
+        <h2 className="text-4xl">Senior Frontend Developer!</h2>
       </section>
     </div>
   );
