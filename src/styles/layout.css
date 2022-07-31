@@ -1,9 +1,15 @@
 @keyframes reveal {
-  from {width: 100%}
-  to {width: 0%}
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
 }
 
 .reveal {
+  
   @apply relative;
 }
 
@@ -13,7 +19,7 @@
 }
 
 .reveal-now-delayed::before {
-  animation-delay: .4s;
+  animation-delay: .2s;
 }
 
 .reveal-now::before {

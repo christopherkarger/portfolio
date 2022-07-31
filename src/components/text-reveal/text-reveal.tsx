@@ -20,6 +20,7 @@ const TextReveal: React.FC<ITextReveal> = ({
         });
       },
       {
+        rootMargin: "0px 0px -10% 0px",
         threshold: 1.0,
       }
     );
@@ -37,7 +38,7 @@ const TextReveal: React.FC<ITextReveal> = ({
   return (
     <div
       ref={revealRef}
-      className={classNames("reveal", {
+      className={classNames("reveal inline-block", {
         "reveal-now": reveal || revealNow,
         "reveal-now-delayed": revealNow,
       })}

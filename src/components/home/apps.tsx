@@ -5,7 +5,7 @@ const Apps: React.FC = () => {
   return (
     <Section headline="Apps">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-20">
-        <div className="mb-10">
+        <div className="mb-10 min-w-[300px]">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Latest project</h2>
           <div className="mb-10">
             <a
@@ -17,10 +17,12 @@ const Apps: React.FC = () => {
               reportery.io
             </a>
           </div>
-          <h3 className="font-bold">Tech stack:</h3>
-          <p>NextJS, TypeScript, Tailwind, Firebase, Vercel</p>
+          <h3 className="font-bold text-xl">Tech stack:</h3>
+          <p className="text-xl">
+            NextJS, TypeScript, Tailwind, Firebase, Vercel
+          </p>
         </div>
-        <div className="relative lg:pb-[100px]">
+        <div className="lg:pb-[100px] relative">
           <img
             className="block ml-auto w-[90%]"
             src="images/app2.png"

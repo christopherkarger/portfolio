@@ -8,16 +8,16 @@ const Section: React.FC<ISection> = ({ headline, children, fullscreen }) => {
     <section className="bg-white top-0 w-full">
       <div className="p-10 pb-0">
         <div className="flex sticky top-0">
-          <div className="pt-4 lg:pt-8">
+          <div className="pt-4 lg:pt-8 bg-white w-full">
             <TextReveal revealInView>
-              <h1 className="text-3xl lg:text-8xl uppercase font-bold bg-white w-full z-20 relative">
+              <h1 className="text-3xl lg:text-8xl uppercase font-bold z-20 relative">
                 {headline}
               </h1>
             </TextReveal>
           </div>
         </div>
         <div
-          className={classNames("pt-20 pb-60", {
+          className={classNames("pt-20 pb-40", {
             "min-h-[calc(100vh-120px)]": fullscreen !== false,
           })}
         >
