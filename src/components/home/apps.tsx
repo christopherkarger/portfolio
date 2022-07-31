@@ -6,12 +6,12 @@ const Apps: React.FC = () => {
     <Section headline="Apps">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-20">
         <div className="mb-10 min-w-[300px]">
-          <h2 className="text-xl lg:text-4xl font-bold mb-4">Latest project</h2>
+          <h2 className="text-xl lg:text-4xl font-bold mb-4">Reportery</h2>
           <div className="mb-10">
             <a
               href="http://reportery.io"
               target="_blank"
-              className="text-xl lg:text-2xl lg:w-[50%]"
+              className="text-xl lg:text-2xl lg:w-[50%] block-link"
               rel="noreferrer"
             >
               reportery.io

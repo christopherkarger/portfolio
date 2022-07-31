@@ -1,5 +1,9 @@
-a {
+a.block-link {
   @apply bg-black !text-white px-1;
+}
+
+img {
+  max-width: 100%;
 }
 
 

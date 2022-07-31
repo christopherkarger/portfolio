@@ -11,7 +11,7 @@ const MobileApps: React.FC = () => {
             <a
               href="https://play.google.com/store/apps/details?id=com.christopherk1986.coinatix&gl=AT"
               target="_blank"
-              className="text-xl lg:text-2xl lg:w-[50%]"
+              className="text-xl lg:text-2xl lg:w-[50%] block-link"
               rel="noreferrer"
             >
               Play store
@@ -27,7 +27,7 @@ const MobileApps: React.FC = () => {
             alt="mobile2"
           />
           <img
-            className="block w-[80%] absolute top-[20%] right-[20%] lg:right-[50%]"
+            className="block w-[80%] absolute top-[15%] right-[20%] lg:right-[50%]"
             src="images/mobile1.png"
             alt="mobile1"
           />

@@ -2,6 +2,7 @@
 import type { NextPage } from "next";
 import AboutMe from "../components/home/about-me";
 import Apps from "../components/home/apps";
+import Contact from "../components/home/contact";
 import Intro from "../components/home/intro";
 import MobileApps from "../components/home/mobile-apps";
 
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <AboutMe />
       <Apps />
       <MobileApps />
+      <Contact />
     </div>
   );
 };
