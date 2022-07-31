@@ -8,7 +8,7 @@ const Intro: React.FC = () => {
         <div className="rounded-full border-2 lg:border-4 border-black w-[200px] h-[200px] lg:w-[300px] lg:h-[300px]  mb-6 overflow-hidden shrink-0">
           <img
             className="block w-full -translate-x-6"
-            src="me.jpg"
+            src="images/me.jpg"
             alt="Christopher"
           />
         </div>
