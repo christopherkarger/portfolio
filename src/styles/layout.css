@@ -1,0 +1,45 @@
+@keyframes reveal {
+  from {width: 100%}
+  to {width: 0%}
+}
+
+.reveal {
+  @apply relative;
+}
+
+.reveal::before {
+  content: '';
+  @apply  block bg-black w-full h-[100%] absolute top-0 z-50;
+}
+
+.reveal-now-delayed::before {
+  animation-delay: .5s;
+}
+
+.reveal-now::before {
+  animation-name: reveal;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  
+}
+
+
+@keyframes revealImage {
+  from {
+    opacity: 0;
+    transform: scale(.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reveal-intro-image {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation-name: revealImage;
+  animation-duration: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
