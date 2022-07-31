@@ -1,9 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useCallback } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import TextReveal from "../text-reveal/text-reveal";
 
 const Intro: React.FC = () => {
+  const scrollToFirstSection = useCallback(() => {
+    const element = document.querySelectorAll("section");
+    element[1]?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
   return (
     <section className="p-4 relative flex flex-col w-full h-screen justify-center items-center">
       <div className="flex flex-col items-center -translate-y-4">
@@ -22,9 +26,13 @@ const Intro: React.FC = () => {
         </h2>
       </div>
 
-      <div className="absolute bottom-5 left-[50%] -translate-y-[-50%]">
+      <button
+        type="button"
+        className="absolute bottom-5 left-[50%] -translate-x-[50%]"
+        onClick={() => scrollToFirstSection()}
+      >
         <MdOutlineKeyboardArrowDown size={40} />
-      </div>
+      </button>
     </section>
   );
 };
