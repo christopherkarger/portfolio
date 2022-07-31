@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import TextReveal from "../text-reveal/text-reveal";
 
 const Intro: React.FC = () => {
@@ -19,6 +20,10 @@ const Intro: React.FC = () => {
         <h2 className="text-md lg:text-2xl">
           <TextReveal revealNow>Frontend Developer</TextReveal>
         </h2>
+      </div>
+
+      <div className="absolute bottom-5 left-[50%] -translate-y-[-50%]">
+        <MdOutlineKeyboardArrowDown size={40} />
       </div>
     </section>
   );
