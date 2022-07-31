@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Section from "../section/section";
 
 const AboutMe: React.FC = () => {
