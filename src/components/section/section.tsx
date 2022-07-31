@@ -17,8 +17,9 @@ const Section: React.FC<ISection> = ({ headline, children, fullscreen }) => {
           </div>
         </div>
         <div
-          className={classNames("pt-20 pb-40", {
-            "min-h-[calc(100vh-120px)]": fullscreen !== false,
+          className={classNames("pt-20 pb-20 lg:pb-40", {
+            "min-h-[calc(100vh-50px)]": fullscreen !== false,
+            "lg:min-h-[calc(100vh-130px)]": fullscreen !== false,
           })}
         >
           {children}

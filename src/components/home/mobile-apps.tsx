@@ -22,12 +22,12 @@ const MobileApps: React.FC = () => {
         </div>
         <div className="lg:pb-[100px] relative lg:ml-[30%]">
           <img
-            className="block w-[80%]"
+            className="block w-[80%] ml-auto"
             src="images/mobile2.png"
             alt="mobile2"
           />
           <img
-            className="block w-[80%] absolute top-[15%] right-[20%] lg:right-[50%]"
+            className="block w-[80%] absolute top-[15%] right-[20%] lg:right-[42%]"
             src="images/mobile1.png"
             alt="mobile1"
           />

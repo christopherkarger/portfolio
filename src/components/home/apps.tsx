@@ -22,14 +22,14 @@ const Apps: React.FC = () => {
             NextJS, TypeScript, Tailwind, Firebase, Vercel
           </p>
         </div>
-        <div className="lg:pb-[100px] relative">
+        <div className="lg:pb-[100px] relative flex flex-col-reverse lg:block">
           <img
-            className="block ml-auto w-[90%]"
+            className="block ml-auto lg:w-[90%] "
             src="images/app2.png"
             alt="Christopher"
           />
           <img
-            className="block w-[80%] absolute top-[35%]"
+            className="block lg:w-[80%] lg:absolute top-[35%] mb-8 lg:mb-0"
             src="images/app1.png"
             alt="Christopher"
           />
