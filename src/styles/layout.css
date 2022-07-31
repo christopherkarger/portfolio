@@ -13,7 +13,7 @@
 }
 
 .reveal-now-delayed::before {
-  animation-delay: .5s;
+  animation-delay: .4s;
 }
 
 .reveal-now::before {
