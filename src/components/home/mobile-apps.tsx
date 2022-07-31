@@ -4,7 +4,7 @@ import Section from "../section/section";
 const MobileApps: React.FC = () => {
   return (
     <Section headline="Mobile Apps">
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-20">
+      <div className="flex flex-col lg:flex-row lg:gap-20">
         <div className="mb-10">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Coinatix</h2>
           <div className="mb-10">
@@ -20,9 +20,9 @@ const MobileApps: React.FC = () => {
           <h3 className="font-bold text-xl">Tech stack:</h3>
           <p className="text-xl">React Native, TypeScript, SCSS, Firebase</p>
         </div>
-        <div className="lg:pb-[100px] relative">
+        <div className="lg:pb-[100px] relative lg:ml-[30%]">
           <img
-            className="block w-[80%] ml-auto"
+            className="block w-[80%]"
             src="images/mobile2.png"
             alt="mobile2"
           />
