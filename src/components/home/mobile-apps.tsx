@@ -11,10 +11,10 @@ const MobileApps: React.FC = () => {
             <a
               href="https://play.google.com/store/apps/details?id=com.christopherk1986.coinatix&gl=AT"
               target="_blank"
-              className="text-xl lg:text-2xl lg:w-[50%] hover:underline"
+              className="text-xl lg:text-2xl lg:w-[50%]"
               rel="noreferrer"
             >
-              Play Store
+              Play store
             </a>
           </div>
           <h3 className="font-bold text-xl">Tech stack:</h3>

@@ -11,7 +11,7 @@ const Apps: React.FC = () => {
             <a
               href="http://reportery.io"
               target="_blank"
-              className="text-xl lg:text-2xl lg:w-[50%] hover:underline"
+              className="text-xl lg:text-2xl lg:w-[50%]"
               rel="noreferrer"
             >
               reportery.io
