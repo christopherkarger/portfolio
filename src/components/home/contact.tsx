@@ -6,7 +6,7 @@ import Section from "../section/section";
 const Contact: React.FC = () => {
   return (
     <Section headline="Contact">
-      <div>
+      <>
         <h2 className="text-xl lg:text-4xl font-bold mb-4">
           Lets work together
         </h2>
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
             <FaGithub className="text-6xl" />
           </a>
         </div>
-      </div>
+      </>
     </Section>
   );
 };
