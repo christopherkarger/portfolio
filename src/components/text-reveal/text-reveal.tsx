@@ -10,6 +10,7 @@ const TextReveal: React.FC<ITextReveal> = ({
 }) => {
   const revealRef = useRef(null);
   const [reveal, setReveal] = useState(false);
+  const [animationEnd, setAnimationEnd] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,14 +38,20 @@ const TextReveal: React.FC<ITextReveal> = ({
   }, []);
 
   return (
-    <div
-      ref={revealRef}
-      className={classNames(`reveal inline-block ${className ?? ""}`, {
-        "reveal-now": reveal || revealNow,
-        "reveal-now-delayed": revealNow,
-      })}
-    >
-      {children}
+    <div className="flex flex-col items-start">
+      <div
+        ref={revealRef}
+        onAnimationEnd={() => {
+          setAnimationEnd(true);
+        }}
+        className={classNames(`${className ?? ""}`, {
+          reveal: !animationEnd,
+          "reveal-now": reveal || revealNow,
+          "reveal-now-delayed": revealNow,
+        })}
+      >
+        {children}
+      </div>
     </div>
   );
 };

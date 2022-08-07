@@ -9,17 +9,16 @@ img {
 
 @keyframes reveal {
   0% {
-    width: 100%;
+    transform: translateX(0%);
   }
 
   100% {
-    width: 0%;
+    transform: translateX(110%);
   }
 }
 
 .reveal {
-  
-  @apply relative;
+  @apply relative overflow-hidden;
 }
 
 .reveal::before {

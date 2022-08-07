@@ -25,14 +25,14 @@ const Contact: React.FC = () => {
           </a>
         </div>
         <h3 className="font-bold text-xl mb-8">Social channels:</h3>
-        <div className="flex gap-10">
+        <div className="flex gap-8">
           <a
             href="https://www.linkedin.com/in/christopher-karger-79574b16b/"
             target="_blank"
             type="button"
             rel="noreferrer"
           >
-            <FaLinkedin className="text-6xl lg:text-8xl" />
+            <FaLinkedin className="text-6xl" />
           </a>
           <a
             href="https://twitter.com/Christo87768342"
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
             type="button"
             rel="noreferrer"
           >
-            <FaTwitter className="text-6xl lg:text-8xl" />
+            <FaTwitter className="text-6xl" />
           </a>
           <a
             href="https://github.com/christopherkarger"
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
             type="button"
             rel="noreferrer"
           >
-            <FaGithub className="text-6xl lg:text-8xl" />
+            <FaGithub className="text-6xl" />
           </a>
         </div>
       </div>

@@ -5,11 +5,11 @@ import Section from "../section/section";
 import TextReveal from "../text-reveal/text-reveal";
 
 const Apps: React.FC = () => {
-  const [speed, setSpeed] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     if (window && window.innerWidth > 1023) {
-      setSpeed(15);
+      setIsDesktop(true);
     }
   }, []);
 
@@ -43,12 +43,13 @@ const Apps: React.FC = () => {
         <ParallaxProvider>
           <div className="lg:pb-[100px] relative z-10 flex flex-col-reverse lg:block">
             <img
-              className="block ml-auto lg:w-[90%] "
+              className="block ml-auto lg:w-[90%]"
               src="images/app2.png"
               alt="Christopher"
             />
+
             <div className="lg:absolute lg:top-[35%]">
-              <Parallax speed={speed}>
+              <Parallax speed={isDesktop ? 10 : 0}>
                 <img
                   className="block lg:w-[80%] mb-8 lg:mb-0"
                   src="images/app1.png"
