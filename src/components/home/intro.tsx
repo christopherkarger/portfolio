@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import TextReveal from "../text-reveal/text-reveal";
 
@@ -8,8 +8,21 @@ const Intro: React.FC = () => {
     const element = document.querySelectorAll("section");
     element[1]?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    if (window) {
+      setWindowHeight(window.innerHeight);
+    }
+  }, []);
+
   return (
-    <section className="p-4 relative flex flex-col w-full h-screen justify-center items-center">
+    <section
+      className="p-4 relative flex flex-col w-full justify-center items-center h-screen"
+      style={{
+        height: windowHeight > 0 ? windowHeight : "100vh",
+      }}
+    >
       <div className="flex flex-col items-center -translate-y-4">
         <div className="reveal-intro-image rounded-full border-2 lg:border-4 border-black w-[200px] h-[200px] lg:w-[300px] lg:h-[300px]  mb-6 overflow-hidden shrink-0">
           <img

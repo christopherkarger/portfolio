@@ -28,7 +28,7 @@ img {
 }
 
 .reveal-now-delayed::before {
-  animation-delay: .2s;
+  animation-delay: .8s;
 }
 
 .reveal-now::before {

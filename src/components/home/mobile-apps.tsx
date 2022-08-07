@@ -5,7 +5,7 @@ const MobileApps: React.FC = () => {
   return (
     <Section headline="Mobile Apps">
       <div className="flex flex-col lg:flex-row lg:gap-20">
-        <div className="mb-10">
+        <div className="mb-10 min-w-[300px] max-w-[400px]">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Coinatix</h2>
           <div className="mb-10">
             <a
@@ -18,9 +18,17 @@ const MobileApps: React.FC = () => {
             </a>
           </div>
           <h3 className="font-bold text-xl">Tech stack:</h3>
-          <p className="text-xl">React Native, TypeScript, SCSS, Firebase</p>
+          <p className="text-xl mb-10">
+            React Native, TypeScript, SCSS, Firebase, SQLite
+          </p>
+
+          <p>
+            A cryptocurrency wallet. Track all your crypto assets in one app.
+            Just add your public addresses or coins to your portfolio. Coinatix
+            does the rest for you
+          </p>
         </div>
-        <div className="lg:pb-[100px] relative lg:ml-[30%]">
+        <div className="lg:pb-[100px] relative lg:ml-[30%] z-10">
           <img
             className="block w-[80%] ml-auto"
             src="images/mobile2.png"
