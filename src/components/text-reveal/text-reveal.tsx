@@ -6,6 +6,7 @@ const TextReveal: React.FC<ITextReveal> = ({
   children,
   revealInView,
   revealNow,
+  className,
 }) => {
   const revealRef = useRef(null);
   const [reveal, setReveal] = useState(false);
@@ -38,7 +39,7 @@ const TextReveal: React.FC<ITextReveal> = ({
   return (
     <div
       ref={revealRef}
-      className={classNames("reveal inline-block", {
+      className={classNames(`reveal inline-block ${className ?? ""}`, {
         "reveal-now": reveal || revealNow,
         "reveal-now-delayed": revealNow,
       })}

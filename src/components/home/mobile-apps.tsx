@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Section from "../section/section";
+import TextReveal from "../text-reveal/text-reveal";
 
 const MobileApps: React.FC = () => {
   const [speed, setSpeed] = useState(0);
@@ -28,9 +29,11 @@ const MobileApps: React.FC = () => {
             </a>
           </div>
           <h3 className="font-bold text-xl">Tech stack:</h3>
-          <p className="text-xl mb-10">
-            React Native, TypeScript, SCSS, Firebase, SQLite
-          </p>
+          <TextReveal revealInView className="mb-10">
+            <p className="text-xl">
+              React Native, TypeScript, SCSS, Firebase, SQLite
+            </p>
+          </TextReveal>
 
           <p>
             A cryptocurrency wallet. Track all your crypto assets in one app.
