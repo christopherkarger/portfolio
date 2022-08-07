@@ -16,7 +16,7 @@ const Apps: React.FC = () => {
   return (
     <Section headline="Apps">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-20">
-        <div className="mb-10 min-w-[300px] max-w-[400px]">
+        <div className="mb-10 lg:min-w-[300px] max-w-[400px]">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Reportery</h2>
           <div className="mb-10">
             <a
