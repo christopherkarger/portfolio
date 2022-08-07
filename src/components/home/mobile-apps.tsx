@@ -1,7 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+import { useEffect, useState } from "react";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Section from "../section/section";
 
 const MobileApps: React.FC = () => {
+  const [speed, setSpeed] = useState(0);
+
+  useEffect(() => {
+    if (window && window.innerWidth > 1023) {
+      setSpeed(15);
+    }
+  }, []);
+
   return (
     <Section headline="Mobile Apps">
       <div className="flex flex-col lg:flex-row lg:gap-20">
@@ -28,18 +38,20 @@ const MobileApps: React.FC = () => {
             does the rest for you
           </p>
         </div>
-        <div className="lg:pb-[100px] relative lg:ml-[30%] z-10">
-          <img
-            className="block w-[80%] ml-auto"
-            src="images/mobile2.png"
-            alt="mobile2"
-          />
-          <img
-            className="block w-[80%] absolute top-[15%] right-[20%] lg:right-[42%]"
-            src="images/mobile1.png"
-            alt="mobile1"
-          />
-        </div>
+        <ParallaxProvider>
+          <div className="lg:pb-[100px] relative lg:ml-[30%] z-10">
+            <img
+              className="block w-[80%] ml-auto"
+              src="images/mobile2.png"
+              alt="mobile2"
+            />
+            <div className="block w-[80%] absolute top-[15%] right-[20%] lg:right-[42%]">
+              <Parallax speed={speed}>
+                <img src="images/mobile1.png" alt="mobile1" />
+              </Parallax>
+            </div>
+          </div>
+        </ParallaxProvider>
       </div>
     </Section>
   );
