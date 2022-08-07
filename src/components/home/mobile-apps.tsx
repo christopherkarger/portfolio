@@ -35,7 +35,7 @@ const MobileApps: React.FC = () => {
           <p>
             A cryptocurrency wallet. Track all your crypto assets in one app.
             Just add your public addresses or coins to your portfolio. Coinatix
-            does the rest for you
+            does the rest for you.
           </p>
         </div>
         <ParallaxProvider>
