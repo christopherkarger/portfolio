@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     <Section headline="Contact">
       <>
         <h2 className="text-xl lg:text-4xl font-bold mb-4">
-          Lets work together
+          Lets work together.
         </h2>
         <div className="mb-10">
           <a
@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
             ></BiPaperPlane>
           </a>
         </div>
-        <h3 className="font-bold text-xl mb-8">Social channels:</h3>
+        <h3 className="font-bold text-xl mb-8">Social channels</h3>
         <div className="flex gap-8">
           <a
             href="https://www.linkedin.com/in/christopher-karger-79574b16b/"
