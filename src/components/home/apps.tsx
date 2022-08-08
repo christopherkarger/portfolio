@@ -1,16 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { useIsDesktop } from "../../hooks/use-is-desktop";
 import Section from "../section/section";
 
 const Apps: React.FC = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    if (window && window.innerWidth > 1023) {
-      setIsDesktop(true);
-    }
-  }, []);
+  const isDesktop = useIsDesktop();
 
   return (
     <Section headline="Apps">
@@ -39,7 +33,7 @@ const Apps: React.FC = () => {
           </p>
         </div>
         <ParallaxProvider>
-          <div className="lg:pb-[100px] relative z-10 flex flex-col-reverse lg:block">
+          <div className="lg:pb-[100px] relative z-10 lg:z-30 flex flex-col-reverse lg:block">
             <img
               className="block ml-auto lg:w-[90%]"
               src="images/app2.png"

@@ -31,7 +31,7 @@ const MobileApps: React.FC = () => {
           </p>
         </div>
         <ParallaxProvider>
-          <div className="lg:pb-[100px] relative lg:ml-[30%] z-10">
+          <div className="lg:pb-[100px] relative lg:ml-[30%] z-10 lg:z-30">
             <img
               className="block w-[80%] ml-auto"
               src="images/mobile2.png"

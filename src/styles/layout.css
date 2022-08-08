@@ -66,6 +66,10 @@ img {
   @apply relative pl-8 mb-10 lg:mb-0 lg:mr-14 lg:pl-0 lg:pt-8;
 }
 
+.timeline li:last-child{
+  @apply mb-0;
+}
+
 .timeline li::before {
   content: '';
   @apply block absolute top-[3px] left-0 w-[20px] h-[20px] rounded-full bg-black;
@@ -94,4 +98,25 @@ img {
 
 .timeline li:last-child::after {
   @apply hidden lg:block;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-now {
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
 }
