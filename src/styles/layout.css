@@ -85,7 +85,7 @@ img {
 
 .timeline li::after {
   content: '';
-  @apply block absolute top-[33px] left-[8px] w-[3px] h-full bg-black lg:w-full lg:h-[4px] lg:left-[38px] lg:top-[11px];
+  @apply block absolute top-[33px] left-[8px] w-[4px] h-full bg-black lg:w-full lg:h-[4px] lg:left-[38px] lg:top-[11px];
 }
 
 .timeline li:first-child::after {
