@@ -7,7 +7,7 @@ const Section: React.FC<ISection> = ({ headline, children, fullscreen }) => {
   return (
     <section className="bg-white top-0 w-full">
       <div className="p-10 pb-0">
-        <div className="flex sticky top-0 z-20 lg:z-auto">
+        <div className="flex sticky top-0 z-20">
           <div className="py-4 lg:py-8 lg:pb-4 bg-white w-full">
             <TextReveal revealInView>
               <h1 className="text-3xl lg:text-8xl uppercase font-bold  relative">
