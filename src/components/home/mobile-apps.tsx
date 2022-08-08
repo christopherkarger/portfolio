@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Section from "../section/section";
-import TextReveal from "../text-reveal/text-reveal";
 
 const MobileApps: React.FC = () => {
   return (
@@ -20,11 +19,10 @@ const MobileApps: React.FC = () => {
             </a>
           </div>
           <h3 className="font-bold text-xl">Tech stack:</h3>
-          <TextReveal revealInView className="mb-10">
-            <p className="text-xl">
-              React Native, TypeScript, SCSS, Firebase, SQLite
-            </p>
-          </TextReveal>
+
+          <p className="text-xl mb-10">
+            React Native, TypeScript, SCSS, Firebase, SQLite
+          </p>
 
           <p>
             A cryptocurrency wallet. Track all your crypto assets in one app.

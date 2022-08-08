@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Section from "../section/section";
-import TextReveal from "../text-reveal/text-reveal";
 
 const Apps: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -29,11 +28,10 @@ const Apps: React.FC = () => {
             </a>
           </div>
           <h3 className="font-bold text-xl">Tech stack:</h3>
-          <TextReveal revealInView className="mb-10">
-            <p className="text-xl">
-              NextJS, TypeScript, Tailwind, Firebase, Firestore, Vercel
-            </p>
-          </TextReveal>
+
+          <p className="text-xl mb-10">
+            NextJS, TypeScript, Tailwind, Firebase, Firestore, Vercel
+          </p>
 
           <p>
             A page-builder for online reports. Create digital financial reports
