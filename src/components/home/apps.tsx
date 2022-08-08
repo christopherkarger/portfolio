@@ -24,7 +24,7 @@ const Apps: React.FC = () => {
           <h3 className="font-bold text-xl">Tech stack:</h3>
 
           <p className="text-xl mb-10">
-            NextJS, TypeScript, Tailwind, Firebase, Firestore, Vercel
+            React, NextJS, TypeScript, Tailwind, Firebase, Firestore, Vercel
           </p>
 
           <p>
