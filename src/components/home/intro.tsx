@@ -42,10 +42,10 @@ const Intro: React.FC = () => {
                 alt="Christopher"
               />
             </div>
-            <h1 className="text-2xl lg:text-5xl uppercase font-bold lg:mb-4 text-center">
+            <h1 className="text-2xl lg:text-5xl leading-none uppercase font-bold mb-2 text-center">
               <TextReveal revealNow>Christopher Karger</TextReveal>
             </h1>
-            <h2 className="text-md lg:text-2xl mb-2 lg:mb-4">
+            <h2 className="text-md lg:text-2xl mb-4 leading-none">
               <TextReveal revealNow>Frontend Developer</TextReveal>
             </h2>
             <button
