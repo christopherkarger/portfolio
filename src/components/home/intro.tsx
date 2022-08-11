@@ -8,6 +8,15 @@ const Intro: React.FC = () => {
     const element = document.querySelectorAll("section");
     element[1]?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
+
+  const scrollToLastSection = useCallback(() => {
+    const element = document.querySelectorAll("section");
+    element[element.length - 1]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, []);
+
   const [windowHeight, setWindowHeight] = useState(0);
 
   useEffect(() => {
@@ -33,12 +42,19 @@ const Intro: React.FC = () => {
                 alt="Christopher"
               />
             </div>
-            <h1 className="text-2xl lg:text-5xl uppercase font-bold lg:mb-4">
+            <h1 className="text-2xl lg:text-5xl uppercase font-bold lg:mb-4 text-center">
               <TextReveal revealNow>Christopher Karger</TextReveal>
             </h1>
-            <h2 className="text-md lg:text-2xl">
+            <h2 className="text-md lg:text-2xl mb-2 lg:mb-4">
               <TextReveal revealNow>Frontend Developer</TextReveal>
             </h2>
+            <button
+              type="button"
+              className="block-link text-md lg:text-2xl"
+              onClick={() => scrollToLastSection()}
+            >
+              <TextReveal revealNow>Contact me</TextReveal>
+            </button>
           </div>
 
           <button

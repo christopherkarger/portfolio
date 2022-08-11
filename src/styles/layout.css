@@ -1,5 +1,5 @@
-a.block-link {
-  @apply bg-black !text-white px-1;
+.block-link {
+  @apply !bg-black !text-white px-2 py-1 rounded-sm;
 }
 
 img {

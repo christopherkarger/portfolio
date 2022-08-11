@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
           <a
             href="mailto:karger1986@gmail.com"
             target="_blank"
-            className="block-link text-xl lg:text-2xl lg:w-[50%]"
+            className="block-link text-xl lg:text-2xl"
             rel="noreferrer"
           >
             Mail me{" "}
