@@ -2,11 +2,11 @@ import { useIsDesktop } from "../../hooks/use-is-desktop";
 import Reveal from "../reveal/reveal";
 import Section from "../section/section";
 
-const Experience: React.FC = () => {
+const Journey: React.FC = () => {
   const isDesktop = useIsDesktop();
 
   return (
-    <Section headline="Experience" fullscreen={false}>
+    <Section headline="My Journey" fullscreen={false}>
       <ul className="timeline">
         <li>
           <Reveal delay={isDesktop ? 400 : 0}>
@@ -32,4 +32,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default Journey;
