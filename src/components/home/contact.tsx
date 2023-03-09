@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         </h2>
         <div className="mb-10">
           <a
-            href="mailto:karger1986@gmail.com"
+            href="mailto:karger1402@gmail.com"
             target="_blank"
             className="block-link text-xl lg:text-2xl"
             rel="noreferrer"
