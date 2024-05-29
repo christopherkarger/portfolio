@@ -48,13 +48,13 @@ const Intro: React.FC = () => {
             <h2 className="text-md lg:text-2xl mb-4 leading-none">
               <TextReveal revealNow>Frontend Developer</TextReveal>
             </h2>
-            <button
-              type="button"
+            <a
+              href="docs/cv.pdf"
+              target="_blank"
               className="block-link text-md lg:text-2xl"
-              onClick={() => scrollToLastSection()}
             >
-              <TextReveal revealNow>Contact me</TextReveal>
-            </button>
+              <TextReveal revealNow>Download CV</TextReveal>
+            </a>
           </div>
 
           <button
