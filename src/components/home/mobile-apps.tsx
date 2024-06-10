@@ -8,16 +8,7 @@ const MobileApps: React.FC = () => {
       <div className="flex flex-col lg:flex-row lg:gap-20">
         <div className="mb-10 lg:min-w-[300px] max-w-[400px]">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Coinatix</h2>
-          <div className="mb-10">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.christopherk1986.coinatix&gl=AT"
-              target="_blank"
-              className="text-xl lg:text-2xl lg:w-[50%] block-link"
-              rel="noreferrer"
-            >
-              Play store
-            </a>
-          </div>
+          <div className="mb-10"></div>
           <h3 className="font-bold text-xl">Tech stack:</h3>
 
           <p className="text-xl mb-10">
