@@ -37,7 +37,7 @@ const Intro: React.FC = () => {
           <div className="flex flex-col items-center -translate-y-4">
             <div className="reveal-intro-image rounded-full border-2 lg:border-[5px] border-black w-[200px] h-[200px] lg:w-[300px] lg:h-[300px]  mb-6 overflow-hidden shrink-0">
               <img
-                className="block w-full -translate-x-6"
+                className="block w-[115%] -translate-x-[22px] max-w-none"
                 src="images/me.jpg"
                 alt="Christopher"
               />
