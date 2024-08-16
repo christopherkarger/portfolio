@@ -46,7 +46,7 @@ const Intro: React.FC = () => {
               <TextReveal revealNow>Christopher Karger</TextReveal>
             </h1>
             <h2 className="text-md lg:text-2xl mb-4 leading-none">
-              <TextReveal revealNow>Frontend Developer</TextReveal>
+              <TextReveal revealNow>Full Stack Developer</TextReveal>
             </h2>
             <a
               href="docs/cv.pdf"
