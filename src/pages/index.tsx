@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
+import GoogleAnalytics from "../components/google/GoogleAnalytics";
 import AboutMe from "../components/home/about-me";
 import Apps from "../components/home/apps";
 import Contact from "../components/home/contact";
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Christopher Karger</title>
       </Head>
+      <GoogleAnalytics />
       <Intro />
       <AboutMe />
       <Journey />
