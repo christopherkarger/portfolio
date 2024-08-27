@@ -14,8 +14,9 @@ const AboutMe: React.FC = () => {
         <div className="lg:w-[50%]">
           <p className="text-2xl font-bold">My tech stack:</p>
           <p className="text-xl mb-10">
-            React or Angular, NodeJS, NextJS, TypeScript, Tailwind, REST or
-            GraphQL
+            React, Angular, TypeScript, React Native, JavaScript, NodeJS,
+            NextJS, Gatsby, RxJS, HTML, SCSS, LESS, Tailwind, MYSQL, MongoDB,
+            REST, GraphQL, Jest, Cypress, Firebase
           </p>
         </div>
       </div>
