@@ -9,7 +9,7 @@ const Journey: React.FC = () => {
     <Section
       emoji="🛸"
       headline="Journey"
-      emojiClassName="translate-y-[10px] mr-4 inline-block"
+      emojiClassName="translate-y-[12px] mr-4 lg:mr-6 inline-block"
       fullscreen={false}
     >
       <ul className="timeline">
