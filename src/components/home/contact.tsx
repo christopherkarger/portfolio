@@ -9,6 +9,7 @@ const Contact: React.FC = () => {
       emoji="👨‍🚀"
       emojiClassName="translate-y-[10px] mr-4 inline-block"
       headline="Contact"
+      fullscreen
     >
       <>
         <h2 className="text-xl lg:text-4xl font-bold mb-4">

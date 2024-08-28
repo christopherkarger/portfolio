@@ -10,7 +10,6 @@ const Journey: React.FC = () => {
       emoji="🛸"
       headline="Journey"
       emojiClassName="translate-y-[12px] mr-4 lg:mr-6 inline-block"
-      fullscreen={false}
     >
       <ul className="timeline">
         <li>
