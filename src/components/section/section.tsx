@@ -3,7 +3,13 @@ import React from "react";
 import TextReveal from "../text-reveal/text-reveal";
 import { ISection } from "./models";
 
-const Section: React.FC<ISection> = ({ headline, children, fullscreen }) => {
+const Section: React.FC<ISection> = ({
+  headline,
+  children,
+  fullscreen,
+  emoji,
+  emojiClassName,
+}) => {
   return (
     <section className="bg-white top-0 w-full">
       <div className="p-10 pb-0">
@@ -11,6 +17,11 @@ const Section: React.FC<ISection> = ({ headline, children, fullscreen }) => {
           <div className="py-4 lg:py-8 lg:pb-4 bg-white w-full">
             <TextReveal revealInView>
               <h1 className="text-3xl lg:text-8xl uppercase font-bold  relative">
+                {emoji ? (
+                  <span className={`text-6xl lg:text-8xl ${emojiClassName}`}>
+                    {emoji}{" "}
+                  </span>
+                ) : null}
                 {headline}
               </h1>
             </TextReveal>

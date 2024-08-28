@@ -7,7 +7,11 @@ const Apps: React.FC = () => {
   const isDesktop = useIsDesktop();
 
   return (
-    <Section headline="🖥️ Apps">
+    <Section
+      emojiClassName="translate-y-[5px] mr-8 inline-block"
+      emoji="🖥️ "
+      headline="Apps"
+    >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-20">
         <div className="mb-10 lg:min-w-[300px] max-w-[400px]">
           <h2 className="text-xl lg:text-4xl font-bold mb-4">Reportery</h2>

@@ -6,7 +6,12 @@ const Journey: React.FC = () => {
   const isDesktop = useIsDesktop();
 
   return (
-    <Section headline="🛸 My Journey" fullscreen={false}>
+    <Section
+      emoji="🛸"
+      headline="Journey"
+      emojiClassName="translate-y-[10px] mr-4 inline-block"
+      fullscreen={false}
+    >
       <ul className="timeline">
         <li>
           <Reveal delay={isDesktop ? 400 : 0}>

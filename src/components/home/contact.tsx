@@ -5,7 +5,11 @@ import Section from "../section/section";
 
 const Contact: React.FC = () => {
   return (
-    <Section headline="👨‍🚀 Contact">
+    <Section
+      emoji="👨‍🚀"
+      emojiClassName="translate-y-[10px] mr-4 inline-block"
+      headline="Contact"
+    >
       <>
         <h2 className="text-xl lg:text-4xl font-bold mb-4">
           Lets work together.
