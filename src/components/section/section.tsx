@@ -29,7 +29,7 @@ const Section: React.FC<ISection> = ({
         </div>
         <div
           className={classNames("pt-5 lg:pt-20 pb-20 lg:pb-40", {
-            "min-h-[calc(100vh-50px)]": fullscreen !== false,
+            "min-h-[calc(100vh-85px)]": fullscreen !== false,
             "lg:min-h-[calc(100vh-130px)]": fullscreen !== false,
           })}
         >
