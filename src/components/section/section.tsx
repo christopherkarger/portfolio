@@ -19,7 +19,7 @@ const Section: React.FC<ISection> = ({
               <h1 className="text-3xl lg:text-8xl uppercase font-bold  relative">
                 {emoji ? (
                   <span className={`text-6xl lg:text-8xl ${emojiClassName}`}>
-                    {emoji}{" "}
+                    {emoji}
                   </span>
                 ) : null}
                 {headline}

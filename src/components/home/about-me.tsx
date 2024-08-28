@@ -3,7 +3,12 @@ import Section from "../section/section";
 
 const AboutMe: React.FC = () => {
   return (
-    <Section emoji="👨🏼‍💻" headline="About me" fullscreen={false}>
+    <Section
+      emoji="👨🏼‍💻"
+      emojiClassName="mr-4 inline-block"
+      headline="About me"
+      fullscreen={false}
+    >
       <div className="flex flex-col lg:flex-row lg:max-w-[70%] lg:gap-20">
         <div className="lg:w-[50%]">
           <p className="text-xl lg:text-2xl mb-6 lg:mb-8">

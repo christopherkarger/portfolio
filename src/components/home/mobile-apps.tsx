@@ -6,7 +6,7 @@ const MobileApps: React.FC = () => {
   return (
     <Section
       emoji="📱"
-      emojiClassName="translate-y-[8px] mr-2 lg:mr-4 inline-block"
+      emojiClassName="translate-y-[8px] mr-1 lg:mr-4 inline-block"
       headline="Mobile Apps"
     >
       <div className="flex flex-col lg:flex-row lg:gap-20">
