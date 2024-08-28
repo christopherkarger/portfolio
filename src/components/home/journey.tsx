@@ -6,7 +6,7 @@ const Journey: React.FC = () => {
   const isDesktop = useIsDesktop();
 
   return (
-    <Section headline="My Journey" fullscreen={false}>
+    <Section headline="🛸 My Journey" fullscreen={false}>
       <ul className="timeline">
         <li>
           <Reveal delay={isDesktop ? 400 : 0}>

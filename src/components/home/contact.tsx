@@ -5,7 +5,7 @@ import Section from "../section/section";
 
 const Contact: React.FC = () => {
   return (
-    <Section headline="Contact">
+    <Section headline="👨‍🚀 Contact">
       <>
         <h2 className="text-xl lg:text-4xl font-bold mb-4">
           Lets work together.
