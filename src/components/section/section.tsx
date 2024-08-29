@@ -31,9 +31,7 @@ const Section: React.FC<ISection> = ({
             <TextReveal revealInView>
               <h1 className="text-3xl lg:text-8xl uppercase font-bold  relative">
                 {emoji ? (
-                  <span className={`text-6xl lg:text-8xl ${emojiClassName}`}>
-                    {emoji}
-                  </span>
+                  <span className={`${emojiClassName}`}>{emoji}</span>
                 ) : null}
                 {headline}
               </h1>

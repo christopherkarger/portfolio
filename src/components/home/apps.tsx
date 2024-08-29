@@ -8,7 +8,7 @@ const Apps: React.FC = () => {
 
   return (
     <Section
-      emojiClassName="translate-y-[8px] mr-4 lg:mr-8 inline-block"
+      emojiClassName="text-[35px] lg:text-8xl translate-y-[2px] mr-[15px] lg:mr-[30px] inline-block"
       emoji="🖥️ "
       headline="Apps"
     >

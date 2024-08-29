@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   return (
     <Section
       emoji="👨‍🚀"
-      emojiClassName="translate-y-[10px] mr-4 inline-block"
+      emojiClassName="text-[40px] lg:text-8xl translate-y-[2px] mr-[10px] lg:mr-[25px] inline-block"
       headline="Contact"
       fullscreen
     >
