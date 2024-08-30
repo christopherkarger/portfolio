@@ -44,6 +44,7 @@ const AboutMe: React.FC = () => {
               <li>Angular</li>
               <li>React Native</li>
               <li>NodeJS</li>
+              <li>Express</li>
               <li>RxJS</li>
               <li>Tailwind</li>
               <li>Bootstrap</li>
@@ -58,6 +59,7 @@ const AboutMe: React.FC = () => {
           <div className="">
             <p className="text-xl font-bold mb-2">Tools</p>
             <ul className="mb-5 list-disc list-inside">
+              <li>Docker</li>
               <li>Git</li>
               <li>Webpack</li>
               <li>Gulp</li>
