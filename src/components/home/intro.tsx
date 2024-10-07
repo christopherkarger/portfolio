@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
     <section
       className="p-4 relative flex flex-col w-full justify-center items-center h-screen"
       style={{
-        height: "100vdh",
+        height: "100dvh",
       }}
     >
       <div className="flex flex-col items-center -translate-y-4">
