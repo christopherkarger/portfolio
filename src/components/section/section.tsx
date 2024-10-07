@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import TextReveal from "../text-reveal/text-reveal";
 import { ISection } from "./models";
 
@@ -10,19 +10,11 @@ const Section: React.FC<ISection> = ({
   emoji,
   emojiClassName,
 }) => {
-  const [windowHeight, setWindowHeight] = useState(0);
-
-  useEffect(() => {
-    if (window) {
-      setWindowHeight(window.innerHeight);
-    }
-  }, []);
-
   return (
     <section
       className="bg-white top-0 w-full"
       style={{
-        height: fullscreen && windowHeight > 0 ? windowHeight : "auto",
+        height: fullscreen ? "100dvh" : "auto",
       }}
     >
       <div className="p-10 pb-0">
