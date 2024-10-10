@@ -71,6 +71,7 @@ const AboutMe: React.FC = () => {
           <div className="">
             <p className="text-xl font-bold mb-2">SSR</p>
             <ul className="mb-5 list-disc list-inside">
+              <li>Astro</li>
               <li>NextJS</li>
               <li>Gatsby</li>
             </ul>
